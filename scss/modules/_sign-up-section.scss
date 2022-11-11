@@ -1,0 +1,41 @@
+#Subscribe{
+    background-color: lightgray;
+}
+.required{
+    color:red;
+}
+input[type="checkbox"]{
+    display:none;
+    &:checked + .label::before{
+        font-family: "Font Awesome 6 Free";
+        content: "\f14a";
+    }
+}
+.label{
+    &::before{
+        padding: 5px;
+        margin-right: 5px;
+        font-family: "Font Awesome 6 Free";
+        font-style: regular;
+        font-size: 2em;
+        content: "\f0c8";
+        display: inline-block;
+    }
+}
+.privacy-policy{
+    text-decoration: underline;
+}
+//affects screens that are larger than 922px
+@media screen and (min-width:922px){
+    .container-sign-up{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        &>.container-sign-up-field{
+            display: flex;
+            flex-direction: column;
+            flex: 0 0 50%;
+        }
+
+    }
+}

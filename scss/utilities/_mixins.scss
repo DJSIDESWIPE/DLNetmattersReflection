@@ -1,0 +1,27 @@
+@mixin Move-up($color,$background-color){
+    position: relative;
+    transition: ease top 0.5s;
+    top:0;
+    border-radius: 8%;
+    &:hover {
+        color:$color;
+        background-color: $background-color;
+        top:-10px;
+        text-decoration: none;
+    }
+    
+}
+@mixin move-up(){
+    position: relative;
+    transition: ease top 0.5s;
+    top:0;
+    border-radius: 0 0 2% 2%;
+    &:hover{
+        top:-10px;
+        text-decoration: none;
+    }
+}
+@mixin setcolors($color,$background-color){
+    color: $color;
+    background-color: $background-color;
+}

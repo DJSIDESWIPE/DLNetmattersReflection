@@ -1,0 +1,98 @@
+//buttons should be in the order that they apear in the page
+button {
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 5px;
+    border: none;
+    color:$secondary-color;
+}
+#ChatBox{
+    position: fixed;
+    bottom: 20px ;
+    right: 20px;
+    border-radius:50%;
+    height: 60px;
+    width: 60px;
+    color: $secondary-color;
+    background-color: $primary-color;
+    z-index: 3;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.accept{
+    background-color: $wisteria;
+}
+.settings{
+    background-color: #bebebe;
+}
+.btn{
+    align-self: flex-start;
+    width:100%;
+
+    &-support{
+        background-color: $dodger-blue;
+        padding: 1em;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+    &-contact{
+        background-color: #939393;
+        padding: 1em;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+    &-search{
+        background-color: #939393;
+        padding:1em;
+        border-radius: 0 4% 4% 0;
+        margin-left:-5px;
+    }
+    &-sidebar{
+        background-color: $primary-color;
+        border-radius: 4%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 15px;
+    }
+    &-banner{
+        background-color: $hoki;
+        padding: 20px;
+        justify-self: start;
+        align-self: start;
+        width:200px;
+    }
+    &-inverse{
+        background-color:#272936;
+        color: $secondary-color;
+        padding: 20px;
+        align-self: flex-start;
+        margin-bottom: 20px;
+    }
+    &-google{
+        background-color:$dodger-blue;
+        color: $secondary-color;
+        padding: 20px;
+        margin-top: auto;
+        margin-bottom: 20px;
+    }
+    &-trustpilot{
+        background-color:$jade;
+        color: $secondary-color;
+        padding: 20px;
+        margin-top: auto;
+        margin-bottom: 20px;
+    }
+    &-subscribe{
+        background-color: $primary-color;
+        color:$secondary-color;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding:10px;
+        &:hover{
+            background-color: darken($primary-color,10%);
+        }
+    }
+}

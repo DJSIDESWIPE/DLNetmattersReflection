@@ -1,0 +1,238 @@
+.container-our-services{
+    margin-bottom: 20px;
+}
+.our-services-header{
+    display: flex;
+    align-items: center;
+    &>h2{
+        text-align: left;
+        flex: 0 0 45%;
+    }
+    &>a{
+        text-align: right;
+        flex: 0 0 46%;
+        
+    }
+}
+.our-services-top{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.our-services-bottom{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+
+}
+.item-services {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px #bebebe;
+    height:300px;
+    border-radius: 8%;
+    text-align: center;
+    &>button{
+        margin-top: auto;
+        margin-bottom: 20px;
+        width:150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.BS {
+    button[class*="BS-button"]{
+        //first color is set to color, 2nd is background-color
+        @include setcolors($secondary-color,$hoki);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$hoki);
+    &:hover i[class*="BS"] {
+        @include setcolors($hoki,$secondary-color);
+    }
+    &:hover button[class*="BS-button"]{
+        @include setcolors($hoki,$secondary-color);
+    }
+}
+.IT{
+    button[class*="IT-button"]{
+        padding: 10px;
+        @include setcolors($secondary-color,$dodger-blue);
+    }
+    @include Move-up($secondary-color,$dodger-blue);
+    &:hover i[class*="IT"]{
+        @include setcolors($dodger-blue,$secondary-color);
+    }
+    &:hover button[class*="IT-button"]{
+        @include setcolors($dodger-blue,$secondary-color);
+    }
+}
+.DM{
+    button[class*="DM-button"]{
+        @include setcolors($secondary-color,$jade);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$jade);
+    &:hover i[class*="DM"] {
+        @include setcolors($jade,$secondary-color);
+    }
+    &:hover button[class*="DM-button"]{
+        @include setcolors($jade,$secondary-color);
+    }
+}
+.TS{
+    button[class*="TS-button"]{
+        @include setcolors($secondary-color,$valencia);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$valencia);
+    &:hover i[class*="TS"]{
+        @include setcolors($valencia,$secondary-color);
+    }
+    &:hover button[class*="TS-button"]{
+        @include setcolors($valencia,$secondary-color);
+    }
+}
+.WD{
+    button[class*="WD-button"]{
+        @include setcolors($secondary-color,$wisteria);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$wisteria);
+    &:hover i[class*="WD"]{
+        @include setcolors($wisteria,$secondary-color);
+    } 
+    &:hover button[class*="WD-button"]{
+        @include setcolors($wisteria,$secondary-color);
+    }
+}
+.CS{
+    button[class*="CS-button"]{
+        @include setcolors($secondary-color,$radical-red);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$radical-red);
+    &:hover i[class*="CS"]{
+        @include setcolors($radical-red,$secondary-color);
+    }
+    &:hover button[class*="CS-button"]{
+        @include setcolors($radical-red,$secondary-color);
+    }
+}
+.DC{
+    button[class*="DC-button"]{
+        @include setcolors($secondary-color,$valencia);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$valencia);
+    &:hover i[class*="DC"]{
+        @include setcolors($valencia,$secondary-color);
+    }
+    &:hover button[class*="DC-button"]{
+        @include setcolors($valencia,$secondary-color);
+    }
+}
+//affects screens that are  smaller than 766px
+@media screen and (max-width:766px){
+    .container-our-services{
+        &>.our-services-header{
+            &>a{
+                display: none;
+            }
+        }
+        &>.our-services-footer{
+            display: flex;
+            justify-content: center;
+            flex: 0 0 100%;
+            margin-top: 10px;
+        }
+        &>*>.our-services-top{
+            display: flex;
+            flex-direction: column;
+        }
+        &>*>.our-services-bottom{
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+}
+//affects screens that are larger than 767px
+@media screen and (min-width:767px){
+    .container-our-services{
+        
+        &>.our-services-footer{
+            &>a{
+                display: none;
+            }
+        }
+    }
+}
+//affects screens that are larger than 767px but smaller than 991px
+@media screen and (min-width:767px) and (max-width:991px){
+    .container-our-services{
+        &>*>.our-services-top{
+            display: flex;
+            flex-direction: column;
+        }
+        &>*>.our-services-bottom{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            &>*{
+                display: flex;
+                flex-direction: column;
+                flex: 0 0 45%;
+            }
+        }
+    }
+}
+//affects screens that are larger than 992px but smaller than 1259px
+@media screen and (min-width:992px) and (max-width:1259px) {
+    .container-our-services{
+        &>*>.our-services-top{
+            display: flex;
+            flex-direction: row;
+            &>*{
+                display: flex;
+                flex-direction: column;
+                flex: 0 0 30%;
+            }
+        }
+        &>*>.our-services-bottom{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            &>*{
+                display: flex;
+                flex-direction: column;
+                flex: 0 0 45%;
+            }
+        }
+    }
+}
+//affects screens that are larger than 1260px
+@media screen and (min-width:1260px){
+    .container-our-services{
+        &>*>.our-services-top{
+            display: flex;
+            flex-direction: row;
+            &>*{
+                display: flex;
+                flex-direction: column;
+                flex: 0 0 32%;
+            }
+        }
+        &>*>.our-services-bottom{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            &>*{
+                display: flex;
+                flex-direction: column;
+                flex: 0 0 23%;
+            }
+        }
+    }
+}

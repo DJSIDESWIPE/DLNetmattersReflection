@@ -1,0 +1,182 @@
+#SearchBox{
+    margin-right: -5px;
+    font-size: 1.5em;
+    width:100%;
+
+}
+.container-header{
+    margin-bottom: 20px;
+    display: flex;
+}
+//affects screens that are smaller than 766px
+@media screen and (max-width:766px){
+    .container-header{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 2em;
+        margin-right: 2em;
+        &>img{
+            order: -5;
+            flex: 0 0 50%;
+            min-width: 0%;
+            max-width: 300px;
+            font-size: 2em;
+            height: auto;
+            align-self: center;
+        }
+        &>i{
+            justify-content: end;
+            margin-left: auto;
+        }
+        &>.btn-sidebar{
+            justify-content: end;
+        }
+        &>.heading-search{
+            display: flex;
+            order:5;
+            flex: 0 0 100%;
+            align-self: center;
+            margin-bottom: 0;
+            display:inline-block;
+            position: relative;
+            &>.btn-search{
+                color: #444;
+                background: none;
+                position: absolute;
+                right:-5px;
+                margin-top:-55px;
+            }
+            &>.search-box{
+                border-radius: 4px;
+                border-color: #bebebe;
+                background-color: #e2e2e2;
+            }
+        }
+        &>.heading-support{
+            display: none;
+        }
+    }
+}
+//affects screens that are larger than 767px smaller than 991px
+@media screen and (min-width:767px) and (max-width:991px){
+    .container-header{
+        display: flex;
+        margin-left: 2em;
+        margin-right: 2em;
+        &>img{
+            order: -5;
+            flex: 0 0 35%;
+            min-width: 0%;
+            max-width: 300px;
+            height: auto;
+            align-self: center;
+        }
+        &>.heading-support{
+            display: none;
+        }
+        &>.heading-search{
+            display: flex;
+            flex: 0 0 45%;
+            align-self: center;
+            &>.btn-search{
+                font-size: .85em;
+            }
+        }
+        &>i{
+            display: none;
+        }
+        &>.btn-sidebar{
+            align-self: center;
+            justify-content: center;
+            flex:0 0 10%;
+        }
+    }
+}
+//affects screens that are larger than 992px smaller than 1259px
+@media screen and (min-width:992px) and (max-width:1259px) {
+    .container-header{
+        display: flex;
+        margin-left: 2em;
+        margin-right: 2em;
+        &>img{
+            order: -5;
+            flex: 0 0 40%;
+            min-width: 0%;
+            max-width: 300px;
+            height: auto;
+            align-self: center;
+        }
+        &>.heading-support{
+            display: flex;
+            align-self: center;
+            justify-content: end;
+            &>*{
+                width:100%
+            }
+            flex: 0 0 40%;
+        }
+        &>.heading-search{
+            display: flex;
+            align-self: center;
+            flex: 0 0 10%;
+            justify-content: end;
+            &>.btn-search{
+                font-size: .80em;
+                border-radius: 4px;
+            }
+            &>.search-box{
+                display: none;
+            }
+        }
+        &>i{
+            display: none;
+        }
+        &>.btn-sidebar{
+            align-self: center;
+            justify-content: end;
+            flex:0 0 10%;
+        }
+    }
+}
+//affects screens that are larger than 1260px
+@media screen and (min-width:1260px){
+    .container-header{
+        display: flex;
+        margin-left: 2em;
+        margin-right: 2em;
+        &>img{
+            order: -5;
+            flex: 0 0 40%;
+            min-width: 0%;
+            max-width: 300px;
+            height: auto;
+            align-self: center;
+        }
+        &>.heading-support{
+            display: flex;
+            align-self: center;
+            justify-content: end;
+            &>*{
+                width:100%
+            }
+            flex: 0 0 25%;
+        }
+        &>.heading-search{
+            display: flex;
+            align-self: center;
+            flex: 0 0 25%;
+            justify-content: end;
+            &>.btn-search{
+                font-size: .85em;
+            }
+        }
+        &>i{
+            display: none;
+        }
+        &>.btn-sidebar{
+            align-self: center;
+            justify-content: end;
+            flex:0 0 10%;
+        }
+    }
+}

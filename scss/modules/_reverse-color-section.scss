@@ -1,0 +1,66 @@
+.reverse-color{
+    background-color: $primary-color;
+    color: $secondary-color;
+    &>div>h2{
+        font-size: 2.5em;
+    }
+    &>div>p{
+        font-size: 1.25em;
+    }
+    &>div>.customerthoughts{
+        font-size: 1.5em;
+    }
+}
+.stars{
+    align-items: flex-start;
+    justify-items: start;
+}
+.fa-star{
+    color:#FFB247;
+}
+//affects screens that are larger than 617px but smaller than 921px
+@media screen and (min-width:617px) and (max-width:921px){
+    //inverse section
+    .inverse-row{
+        display: flex;
+        flex-direction: row;
+        flex: 0 0 100%;
+        &>*{
+            flex: 0 0 45%;
+        }
+    }
+}
+//affects screens that are larger than 1260px
+@media screen and (min-width:1260px){
+    .inverse-row{
+        display: flex;
+        flex-direction: row;
+        flex: 0 0 100%;
+        &>*{
+            flex: 0 0 45%;
+        }
+    }
+}
+//affects screens that are larger than 922px
+@media screen and (min-width:922px){
+    .container-inverse{
+        display: flex;
+        flex-direction: row;
+        &>.container-inverse-welcome{
+            display: flex;
+            flex-direction: column;
+        }
+        &>.container-inverse-reviews{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+//affects screens that are smaller than 991px
+@media screen and (max-width:991px){
+    .container-inverse {
+        & &-welcome h2{
+            padding-top: 20px;
+        }
+    }
+}
