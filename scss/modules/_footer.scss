@@ -1,0 +1,111 @@
+footer{
+    background-color:$primary-color;
+    color: $secondary-color;
+}
+.footer-links{
+    color:$secondary-color;
+    &:visited{
+        color: $secondary-color;
+    }
+}
+.copyright{
+    padding-top: 5px;
+    border-top: solid $secondary-color 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    & .start{
+        flex: 0 0 75%;
+        justify-self: start;
+        align-self: center;
+    }
+    & .end{
+        display: flex;
+        flex: 0 0 20%;
+        justify-self: end;
+        margin-left:auto;
+        align-self: center;
+        & *{
+            justify-self: space-around;
+            flex:0 0 20%;
+        }
+    }
+    
+}
+
+li>a{
+    color: $secondary-color;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+//affects screens that are smaller than 496px
+@media screen and (max-width:496px){
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+//affects screens that are larger than 497px smaller than 721px
+@media screen and (min-width:497px) and (max-width:721px) {
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: center;
+        &>.footer-link-section{
+            flex: 0 0 50%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+        }
+        &>.offices{
+            flex: 0 0 50%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+        }
+        
+    }
+}
+//affects screens that are larger than 722px smaller than 1259px
+@media screen and (min-width:722px) and (max-width:1259px){
+    .container-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex:0 0 95%;
+        &>.footer-link-section{
+            display: flex;
+            flex: 0 0 45%;
+            width:100%;
+            flex-direction: column;
+            &:first-child{
+                justify-self: center;
+                margin-left: auto;
+            }
+            &:last-child{
+                justify-self: center;
+                margin-right: auto;
+            }
+        }
+        &>.offices{
+            flex: 0 0 33%;
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: column;
+        } 
+    }
+}
+//affects screens that are smaller than 1260px
+@media screen and (min-width:1260px){
+    .container-footer{
+        column-count: 5;
+        flex-direction: row;
+        display: inline-flex;
+        flex: 1 0 20%;
+    }
+}

@@ -1,0 +1,89 @@
+i{
+    align-self: center;
+}
+.icon{
+    &-BS{
+        color:$hoki;
+        margin-top: 10px;
+        padding: 5px;
+        &-img{
+            margin: 20px;
+            color: $secondary-color;
+            border-radius: 50%;
+            padding: 20px;
+            background-color: $hoki;
+        }
+    }
+    &-IT{
+        color:$dodger-blue;
+        margin-top: 10px;
+        padding: 5px;
+        &-img{
+            margin: 20px;
+            color: $secondary-color;
+            border-radius: 50%;
+            padding: 20px;
+            background-color: $dodger-blue;
+        }
+    }
+    &-DM{
+        color:$jade;
+        margin-top: 10px;
+        padding: 5px;
+        &-img{
+            margin: 20px;
+            color: $secondary-color;
+            border-radius: 50%;
+            padding: 20px;
+            background-color: $jade;
+        }
+    }
+    &-TS{
+        color:$valencia;
+        margin-top: 10px;
+        padding: 5px;
+        &-img{
+            margin: 20px;
+            color: $secondary-color;
+            border-radius: 50%;
+            padding: 20px;
+            background-color: $valencia;
+        }
+    }
+    &-WD{
+        color:$wisteria;
+        margin-top: 10px;
+        padding: 5px;
+        &-img{
+            margin: 20px;
+            color: $secondary-color;
+            border-radius: 50%;
+            padding: 20px;
+            background-color: $wisteria;
+        }
+    }
+    &-CS{
+        color: $radical-red;
+        margin-top: 10px;
+        padding: 5px;
+        &-img{
+            margin: 20px;
+            color: $secondary-color;
+            border-radius: 50%;
+            padding: 20px;
+            background-color: $radical-red;
+        }
+    }
+    &-DC{
+        color: $valencia;
+        margin-top: 10px;
+        padding: 5px;
+        &-img{
+            margin: 20px;
+            color: $secondary-color;
+            border-radius: 50%;
+            padding: 20px;
+            background-color: $valencia;
+        }
+    }
+}  

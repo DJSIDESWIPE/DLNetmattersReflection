@@ -1,0 +1,65 @@
+.container-banner {
+    background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-oaVs.png");
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    color: $secondary-color;
+    display: flex;
+    margin-top: 0;
+    justify-content: center;
+    align-content: center;
+    &>.banner-div{
+        flex: 0 0 95%;
+        height:100%;
+        &>.banner-h2{
+            margin-top: 5%;
+            //font-size: 4em;
+            margin-bottom: 0;
+        }
+        &>.banner-p{
+            margin-top: 10px;
+            font-size: 1.25em;
+        }
+    }
+}
+//affects screens that are smaller than 766px
+@media screen and (max-width:766px){
+    
+    .container-banner{
+        text-align: center;
+        .banner-div{
+            margin-bottom: 10px;
+            & > p{
+                margin-left: -15px;
+            }
+        }
+    }
+}
+//affects screens that are larger than 767px but smaller than 991px
+@media screen and (min-width:767px) and (max-width:991px){
+    .container-banner{
+        min-height: 50vh;
+        max-height: 75vh;
+        text-align: center;
+        align-items: center;
+        .banner-div{
+            margin-bottom: 10px;
+            & > p{
+                margin-left: -15px;
+            }
+        }
+    }
+}
+//affects screens that are larger than 922px
+@media screen and (min-width:922px){
+    .container-banner {
+        height:75vh;
+        & .banner-div{
+            margin-top: 50px;
+            margin-bottom: auto;
+            & p{
+                margin-left: 0;
+            }
+        }
+    }
+}

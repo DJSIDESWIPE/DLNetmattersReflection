@@ -1,0 +1,218 @@
+nav{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: $primary-color;
+  & *{
+      margin: 0;
+      padding: 0;
+  }
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  &:hover{
+      text-decoration: none;
+  }
+  &:visited{
+      color: white;
+  }
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  flex: 0 0 14%;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  & ul li a {
+      text-decoration: none;
+  }
+  & ul li a:hover {
+      text-decoration: underline;
+  }
+}
+nav> ul{
+  background: none;
+  display: flex;
+  justify-content: space-around;
+  flex: 0 0 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  & *{
+      background: none;
+  }
+}
+nav ul li ul{
+  display: none;
+  position: relative;
+}
+nav> ul >.navbar-bs:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color:darken($hoki, 10%);
+  border-radius: 0 0 8px 8px;
+  margin-top: 74px;
+  width: 14%;
+  z-index: 2;
+  & li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
+nav ul .navbar-bs:hover {
+   background-color: $hoki;
+  & i{
+      color:white;
+  }
+}
+nav> ul >.navbar-it:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color:darken($dodger-blue, 10%);
+  border-radius: 0 0 8px 8px;
+  margin-top: 74px;
+  width: 14%;
+  z-index: 2;
+  & li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
+nav ul .navbar-it:hover {
+   background-color: $dodger-blue;
+  & i{
+      color:white;
+  }
+}
+nav> ul >.navbar-dm:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color:darken($jade, 10%);
+  border-radius: 0 0 8px 8px;
+  margin-top: 74px;
+  width: 14%;
+  z-index: 2;
+  & li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
+nav ul .navbar-dm:hover {
+   background-color: $jade;
+  & i{
+      color:white;
+  }
+}
+nav> ul >.navbar-ts:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color:darken($valencia, 10%);
+  border-radius: 0 0 8px 8px;
+  margin-top: 74px;
+  width: 14%;
+  z-index: 2;
+  & li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
+nav ul .navbar-ts:hover {
+  background-color:$valencia ;
+  & i{
+      color:white;
+  }
+}
+nav> ul >.navbar-wd:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color:darken($wisteria, 10%);
+  border-radius: 0 0 8px 8px;
+  margin-top: 74px;
+  width: 14%;
+  z-index: 2;
+  & li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
+nav ul .navbar-wd:hover {
+  background-color: $wisteria;
+  & i{
+      color:white;
+  }
+}
+nav> ul >.navbar-cs:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color:darken($radical-red, 10%);
+  border-radius: 0 0 8px 8px;
+  margin-top: 74px;
+  width: 14%;
+  z-index: 2;
+  & li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
+nav ul .navbar-cs:hover {
+   background-color: $radical-red;
+  & i{
+      color:white;
+  }
+}
+nav> ul >.navbar-dc:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color:darken($valencia, 10%);
+  border-radius: 0 0 8px 8px;
+  margin-top: 74px;
+  width: 14%;
+  z-index: 2;
+  & li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
+nav ul .navbar-dc:hover {
+  background-color:$valencia ;
+  & i{
+      color:white;
+  }
+}
+//affects screens that are larger than 922px
+@media screen and (min-width:922px){
+  .container-navbar{
+      display: flex;
+      &>.navbar{
+          display: flex;
+          flex: 0 0 95%;
+          &>.navbar-content{
+              display: flex;
+              flex-direction: column;
+              justify-self: space-evenly;
+              flex: 0 0 14%;
+              &>*{
+                  margin-left: auto;
+                  margin-right: auto;
+              }
+          }
+      }
+  }
+}
+//affects screens that are smaller than 991px
+@media screen and (max-width:991px){
+  nav{
+      display: none;
+  }
+}
