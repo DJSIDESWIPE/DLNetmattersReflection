@@ -1,65 +1,104 @@
-.container-banner {
-    background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-oaVs.png");
-    background-repeat: no-repeat;
+@media screen and (max-width: 767px) {
+    .banner-div{
+        text-align: center;
+        & > h2{
+            margin-top: 10%;
+        }
+    }
+}
+@media screen and (min-width: 767px) {
+    .banner-div{
+        text-align: left;
+        & > h2 {
+            margin-top: 10%;
+            margin-left: 0.9em;
+            margin-right: 0.9em;
+        }
+        & > p{
+            margin-left:  2em;
+            margin-right:  2em;
+        }
+        & > button{
+            margin-left:  2em;
+            margin-right:  2em;
+        }
+    }
+}
+.container-banner{
+    margin: 0;
+    overflow: hidden;
     
+}
+.banner-div{
     width: 100%;
-    color: $secondary-color;
-    display: flex;
-    margin-top: 0;
-    justify-content: center;
-    align-content: center;
-    &>.banner-div{
-        flex: 0 0 95%;
-        height:100%;
-        &>.banner-h2{
-            margin-top: 5%;
-            //font-size: 4em;
-            margin-bottom: 0;
-        }
-        &>.banner-p{
-            margin-top: 10px;
-            font-size: 1.25em;
-        }
+    height: 100vh;
+    margin: 0;
+    display: inline-block;
+    color: white;
+    & > h2,p{
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
     }
-}
-//affects screens that are smaller than 766px
-@media screen and (max-width:766px){
+    & > button{
+        margin-left:24px;
+    }
+    &-1{
+        background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-oaVs.png");
+        background-repeat: no-repeat;
+    }
+    &-2{
+        background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-YqKT.png");
+        background-repeat: no-repeat;
+    }
+    &-3{
+        background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-Na90.png");
+        background-repeat: no-repeat;
+    }
+    &-4{
+        background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-3iEf.png");
+        background-repeat: no-repeat;
+    }
+    &-5{
+        background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-gKfQ.png");
+        background-repeat: no-repeat;
+    }
+    &-6{
+        background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-KDXb.png");
+        background-repeat: no-repeat;
+    }
+    &-7{
+        background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-kvtG.png");
+        background-repeat: no-repeat;
+    }
+}.slick-dots li button:before
+{
     
-    .container-banner{
-        text-align: center;
-        .banner-div{
-            margin-bottom: 10px;
-            & > p{
-                margin-left: -15px;
-            }
-        }
-    }
+    font-size: 8px;
+    line-height: 20px;
+
+    position: absolute;
+    top: -50px;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: '\f111';
+    text-align: center;
+    opacity: .25;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-//affects screens that are larger than 767px but smaller than 991px
-@media screen and (min-width:767px) and (max-width:991px){
-    .container-banner{
-        min-height: 50vh;
-        max-height: 75vh;
-        text-align: center;
-        align-items: center;
-        .banner-div{
-            margin-bottom: 10px;
-            & > p{
-                margin-left: -15px;
-            }
-        }
-    }
-}
-//affects screens that are larger than 922px
-@media screen and (min-width:922px){
-    .container-banner {
-        height:75vh;
-        & .banner-div{
-            margin-top: 50px;
-            margin-bottom: auto;
-            & p{
-                margin-left: 0;
-            }
-        }
-    }
+.slick-dots li.slick-active button:before
+{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Font Awesome 6 Free";
+    content: '\f192';
+    opacity: .75;
+    color: white;
 }

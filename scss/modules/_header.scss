@@ -2,19 +2,25 @@
     margin-right: -5px;
     font-size: 1.5em;
     width:100%;
-
 }
+
 .container-header{
     margin-bottom: 20px;
     display: flex;
+    background-color: white;
+    width: 100%;
+    & > *{
+        width: 95%;
+        margin-left: 2em;
+        margin-right: 2em;
+        display: flex;
+    }
 }
 //affects screens that are smaller than 766px
 @media screen and (max-width:766px){
-    .container-header{
+    .container-header-content{
         display: flex;
         flex-wrap: wrap;
-        margin-left: 2em;
-        margin-right: 2em;
         &>img{
             order: -5;
             flex: 0 0 50%;
@@ -59,10 +65,8 @@
 }
 //affects screens that are larger than 767px smaller than 991px
 @media screen and (min-width:767px) and (max-width:991px){
-    .container-header{
+    .container-header-content{
         display: flex;
-        margin-left: 2em;
-        margin-right: 2em;
         &>img{
             order: -5;
             flex: 0 0 35%;
@@ -94,10 +98,8 @@
 }
 //affects screens that are larger than 992px smaller than 1259px
 @media screen and (min-width:992px) and (max-width:1259px) {
-    .container-header{
+    .container-header-content{
         display: flex;
-        margin-left: 2em;
-        margin-right: 2em;
         &>img{
             order: -5;
             flex: 0 0 40%;
@@ -140,10 +142,8 @@
 }
 //affects screens that are larger than 1260px
 @media screen and (min-width:1260px){
-    .container-header{
+    .container-header-content{
         display: flex;
-        margin-left: 2em;
-        margin-right: 2em;
         &>img{
             order: -5;
             flex: 0 0 40%;
