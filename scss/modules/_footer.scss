@@ -1,11 +1,29 @@
 footer{
     background-color:$primary-color;
     color: $secondary-color;
+    
 }
 .footer-links{
     color:$secondary-color;
     &:visited{
         color: $secondary-color;
+    }
+    & > ul{
+        margin: auto 0;
+        padding: 0;
+    }
+    & > h4{
+        margin: auto 0;
+    }
+}
+.offices{
+    
+    & > h4{
+        margin: 0;
+    }
+    & > ul{
+        margin: auto 0;
+        padding: 0;
     }
 }
 .copyright{
