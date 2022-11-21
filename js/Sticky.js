@@ -6,7 +6,7 @@ window.onscroll = function() {
     $header = $(".container-header");
     oldScrollHeader = stickyScroll($header, oldScrollHeader, "0px");
     $navbar = $(".container-navbar");
-    oldScrollNav = stickyScroll($navbar, oldScrollNav, "70px");
+    oldScrollNav = stickyScroll($navbar, oldScrollNav, "68px");
 
 };
 

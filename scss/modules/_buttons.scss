@@ -37,12 +37,18 @@ button {
         padding: 1em;
         border-radius: 4px;
         font-size: 1em;
+        &:hover{
+            background-color: darken($dodger-blue, 10%);
+        }
     }
     &-contact{
         background-color: #939393;
         padding: 1em;
         border-radius: 4px;
         font-size: 1em;
+        &:hover{
+            background-color: darken(#939393, 10%);
+        }
     }
     &-search{
         background-color: #939393;
@@ -50,12 +56,18 @@ button {
         border-radius: 0 4% 4% 0;
         margin-left:-5px;
     }
+    &:hover{
+        background-color: darken(#939393, 10%);
+    }
     &-sidebar{
         background-color: $primary-color;
         border-radius: 4%;
         margin-top: 5px;
         margin-bottom: 5px;
         padding: 15px;
+    }
+    &:hover{
+        background-color: darken($primary-color, 10%);
     }
     &-banner{
         background-color: $hoki;
