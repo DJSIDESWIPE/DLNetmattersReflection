@@ -1,7 +1,14 @@
 #SearchBox{
     margin-right: -5px;
-    font-size: 1.5em;
+    font-size: 1.6em;
     width:100%;
+    border: 1px solid #dadada;
+    border-radius: 0px;
+    &:focus{
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+    }
 }
 
 .container-header{

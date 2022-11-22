@@ -9,6 +9,11 @@
     }
     &>div>.customerthoughts{
         font-size: 1.5em;
+        &> i{
+            font-size: 0.75em;
+            color: grey;   
+        }
+        
     }
 }
 .stars{
@@ -26,7 +31,7 @@
         flex-direction: row;
         flex: 0 0 100%;
         &>*{
-            flex: 0 0 45%;
+            flex: 0 0 46%;
         }
     }
 }

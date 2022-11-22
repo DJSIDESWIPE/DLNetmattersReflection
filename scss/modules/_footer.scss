@@ -96,11 +96,11 @@ footer{
 }
 //affects screens that are smaller than 1260px
 @media screen and (min-width:1260px){
-.footer-link-section{
-    width: calc(20% - 30px);
-}
-.offices{
-    width: calc(22% - 30px);
-}
+    .footer-link-section{
+        width: calc(20% - 30px);
+    }
+    .offices{
+        width: calc(22% - 30px);
+    }
 
 }

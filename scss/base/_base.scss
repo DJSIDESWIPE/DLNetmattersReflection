@@ -17,6 +17,23 @@
         &>.logo-images{
             position: relative;
             display: inline-block;
+            & > div{
+                display: none;
+                padding: 10px;
+                width: 200px;
+                height: 175px;
+                position: absolute;
+                margin-top: -200px;
+                background-color: $primary-color;
+                color: white;
+                text-align: center;
+                & >*{
+                    margin: 5px 2px;
+                }
+            }
+            &:hover div{
+                display: block;
+            }
             & > img{
                 width:95%;
             }
@@ -34,12 +51,9 @@
     }
     .container-sidebar{
         display: none;
-        & > ul{
-            & > li > .sidebar-navbar{
-                display: none;
-            }
-        }
-        
+    }
+    .sidebar-navbar{
+        display: none;
     }
     .sidebar-contact-us{
         display: none;
@@ -62,30 +76,34 @@
         margin: 0;
         padding: 0;
         background-color: $primary-color;
-        & > a {
-            & >li {
-                background-color: lighten($primary-color, 10%);
-                border-top: 1px solid black;
+        & > .sidebar-headers {
+            background-color: lighten($primary-color, 10%);
+            border-top: 1px solid black;
+            margin: 0;
+            padding: 10px;
+            
+            &:hover{
+                background-color: lighten($primary-color, 15%);
+            }
+            & > a {       
+                
+                margin-left: 1px;   
                 color: white;
-                width: 90%;
-                padding: 10px;
-                margin: 0;
-                margin-left: 1px;
-                &:hover{
-                    background-color: lighten($primary-color, 15%);
-                }
+                width: 90%;  
+                
             }    
         } 
         & > li > ul{
             margin: 0;
             padding: 0;
-            & > a{
-                &>li{
-                    color: white;
-                    width: 90%;
-                    padding: 10px;
+            & > li{
+                padding: 10px;
                     margin: 0;
                     border-top: 1px solid black;
+                &>a{
+                    color: white;
+                    width: 90%;
+                    
                     &::before{
                         
                         font-size: 16px;

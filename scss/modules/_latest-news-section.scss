@@ -19,6 +19,8 @@
             background-color: $first-news;
             color:$secondary-color;
             border-bottom: 5px 5px;
+            width: 100px;
+            border-radius: 4px;
             padding: 10px;
             border-style: none;
             align-self: start;
@@ -32,6 +34,8 @@
             background-color: $second-news;
             color:$secondary-color;
             border-bottom: 5px 5px;
+            width: 100px;
+            border-radius: 4px;
             padding: 10px;
             border-style: none;
             align-self: start;
@@ -45,6 +49,8 @@
             background-color: $third-news;
             color:$secondary-color;
             border-bottom: 5px 5px;
+            width: 100px;
+            border-radius: 4px;
             padding: 10px;
             border-style: none;
             align-self: start;
@@ -63,10 +69,9 @@
     flex-direction: row;
     align-items: center;
     & img{
-        flex: 0 0 20%;
         justify-content: center;
         align-self: center;
-        margin: auto;
+        
         height: 50px;
         width: 50px;
     }

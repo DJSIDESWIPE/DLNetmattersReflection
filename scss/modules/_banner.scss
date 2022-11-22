@@ -41,35 +41,80 @@
         width: 95%;
     }
     & > button{
+        font-size: 1.25em;
         margin-left:24px;
+        padding: 15px;
+        width:250px;
     }
     &-1{
         background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-oaVs.png");
         background-repeat: no-repeat;
+        & > .btn-banner{
+            background-color: $hoki;
+            &:hover{
+                background-color:darken($hoki, 10%);
+            }
+        }
     }
     &-2{
         background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-YqKT.png");
         background-repeat: no-repeat;
+        & > .btn-banner{
+            background-color: $hoki;
+            &:hover{
+                background-color:darken($hoki, 10%);
+            }
+        }
     }
     &-3{
         background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-Na90.png");
         background-repeat: no-repeat;
+        & > .btn-banner{
+            background-color: $dodger-blue;
+            &:hover{
+                background-color:darken($dodger-blue , 10%);
+            }
+        }
     }
     &-4{
         background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-3iEf.png");
         background-repeat: no-repeat;
+        & > .btn-banner{
+            background-color: $jade;
+            &:hover{
+                background-color:darken($jade , 10%);
+            }
+        }
     }
     &-5{
         background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-gKfQ.png");
         background-repeat: no-repeat;
+        & > .btn-banner{
+            background-color: $valencia;
+            &:hover{
+                background-color:darken($valencia , 10%);
+            }
+        }
     }
     &-6{
         background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-KDXb.png");
         background-repeat: no-repeat;
+        & > .btn-banner{
+            background-color: $wisteria;
+            &:hover{
+                background-color:darken($wisteria , 10%);
+            }
+        }
     }
     &-7{
         background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-kvtG.png");
         background-repeat: no-repeat;
+        & > .btn-banner{
+            background-color: $radical-red;
+            &:hover{
+                background-color:darken($radical-red , 10%);
+            }
+        }
     }
 }.slick-dots li button:before
 {
