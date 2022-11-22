@@ -37,39 +37,49 @@ button {
         padding: 1em;
         border-radius: 4px;
         font-size: 1em;
+        &:hover{
+            background-color: darken($dodger-blue, 10%);
+        }
     }
     &-contact{
         background-color: #939393;
         padding: 1em;
         border-radius: 4px;
         font-size: 1em;
+        &:hover{
+            background-color: darken(#939393, 10%);
+        }
     }
     &-search{
         background-color: #939393;
         padding:1em;
         border-radius: 0 4% 4% 0;
         margin-left:-5px;
+        &:hover{
+            background-color: darken(#939393, 10%);
+        }
     }
+    
     &-sidebar{
         background-color: $primary-color;
         border-radius: 4%;
         margin-top: 5px;
         margin-bottom: 5px;
         padding: 15px;
+        &:hover{
+            background-color: darken($primary-color, 10%);
+        }
     }
-    &-banner{
-        background-color: $hoki;
-        padding: 20px;
-        justify-self: start;
-        align-self: start;
-        width:200px;
-    }
+    
     &-inverse{
         background-color:#272936;
         color: $secondary-color;
         padding: 20px;
         align-self: flex-start;
         margin-bottom: 20px;
+        &:hover{
+            background-color: darken(#272936, 10%);
+        }
     }
     &-google{
         background-color:$dodger-blue;
@@ -77,6 +87,9 @@ button {
         padding: 20px;
         margin-top: auto;
         margin-bottom: 20px;
+        &:hover{
+            background-color: darken($dodger-blue, 10%);
+        }
     }
     &-trustpilot{
         background-color:$jade;
@@ -84,13 +97,17 @@ button {
         padding: 20px;
         margin-top: auto;
         margin-bottom: 20px;
+        &:hover{
+            background-color: darken($jade, 10%);
+        }
     }
     &-subscribe{
         background-color: $primary-color;
         color:$secondary-color;
         margin-top: 20px;
         margin-bottom: 20px;
-        padding:10px;
+        padding:15px;
+        border-radius: 4px;
         &:hover{
             background-color: darken($primary-color,10%);
         }

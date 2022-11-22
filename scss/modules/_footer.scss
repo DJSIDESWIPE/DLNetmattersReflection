@@ -1,111 +1,106 @@
 footer{
     background-color:$primary-color;
     color: $secondary-color;
+    margin-top: 0;
 }
-.footer-links{
-    color:$secondary-color;
-    &:visited{
-        color: $secondary-color;
-    }
-}
-.copyright{
-    padding-top: 5px;
-    border-top: solid $secondary-color 1px;
-    margin-left: 10px;
-    margin-right: 10px;
+.footer-container{
+    width: 95%;
+    margin: 10px auto;
+    margin-top: 0;
     display: flex;
-    & .start{
-        flex: 0 0 75%;
-        justify-self: start;
-        align-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-link-section, .offices{
+    text-align: left;
+    & > h4{
+        margin-left: 0;
     }
-    & .end{
-        display: flex;
-        flex: 0 0 20%;
-        justify-self: end;
-        margin-left:auto;
-        align-self: center;
-        & *{
-            justify-self: space-around;
-            flex:0 0 20%;
+    &>ul{
+        margin-left: 0;
+        padding: 0;
+        font-size: 0.75em;
+        & > li{
+            & > * {
+                color: white;
+            }
         }
     }
-    
 }
 
-li>a{
-    color: $secondary-color;
-    text-decoration: none;
-    &:hover{
-        text-decoration: underline;
+.copyright{
+    width: 100%;
+    display: flex;
+    border-top: 1px solid white;
+    &:first-child{
+        justify-self: start;
+    }
+    &:last-child{
+        justify-self: end;
+    }
+}
+
+.copyright-icons{
+    margin-left: auto;
+    margin-right: 20px;
+    & > *{
+        margin: 10px;
+        border-radius: 100%;
+        padding: 10px;
+    }
+    & >.fa-facebook{
+        &:hover{
+            background-color: #3b5998;
+        }
+    }
+    & >.fa-twitter{
+        &:hover{
+            background-color: #00aced;
+        }
+    }
+    &>.fa-instagram{
+        &:hover{
+            background-color: #d93175;
+        }
+    }
+    &>.fa-linkedin{
+        &:hover{
+            background-color: #0077b5;
+        }
     }
 }
 //affects screens that are smaller than 496px
 @media screen and (max-width:496px){
-    .container-footer{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+    .footer-link-section, .offices{
+        width: 65%;
+        margin: 10px auto;
     }
 }
 //affects screens that are larger than 497px smaller than 721px
 @media screen and (min-width:497px) and (max-width:721px) {
-    .container-footer{
-        display: flex;
-        flex-direction: column;
-        flex-flow: wrap;
-        justify-content: center;
-        &>.footer-link-section{
-            flex: 0 0 50%;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 100%;
-        }
-        &>.offices{
-            flex: 0 0 50%;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 100%;
-        }
-        
+    .footer-link-section, .offices{
+        width: 45%;
+        margin: 10px auto;
     }
 }
 //affects screens that are larger than 722px smaller than 1259px
 @media screen and (min-width:722px) and (max-width:1259px){
-    .container-footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex:0 0 95%;
-        &>.footer-link-section{
-            display: flex;
-            flex: 0 0 45%;
-            width:100%;
-            flex-direction: column;
-            &:first-child{
-                justify-self: center;
-                margin-left: auto;
-            }
-            &:last-child{
-                justify-self: center;
-                margin-right: auto;
-            }
-        }
-        &>.offices{
-            flex: 0 0 33%;
-            margin-left: auto;
-            margin-right: auto;
-            flex-direction: column;
-        } 
+    .footer-link-section{
+        width: 35%;
+        
+    }
+    .offices{
+        width: 33%;
+        margin: 10px auto;
     }
 }
 //affects screens that are smaller than 1260px
 @media screen and (min-width:1260px){
-    .container-footer{
-        column-count: 5;
-        flex-direction: row;
-        display: inline-flex;
-        flex: 1 0 20%;
+    .footer-link-section{
+        width: calc(20% - 30px);
     }
+    .offices{
+        width: calc(22% - 30px);
+    }
+
 }

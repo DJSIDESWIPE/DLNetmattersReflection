@@ -1,0 +1,174 @@
+.cookie-container{
+    background-color: rgba(#000000, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 99999;
+    & > .cookie-container-content{
+        background-color: white;
+        width: 75%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
+        margin-bottom: 25%;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        & > h2{
+            text-align: left;
+            margin-bottom: 0;
+        }
+        & > p{
+            margin-top: auto;
+            border-top: black 1px solid;
+            border-bottom: black 1px solid;
+            margin-bottom: auto;
+            padding: 5px;
+        }
+        & > div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-content: space-around;
+            & > #Accept-Cookie{
+                background-color: $wisteria;
+                &:hover{
+                    background-color: darken($wisteria, 10%);
+                }
+            }
+            & > .cookie-settings-btn{
+                background-color: grey;
+                &:hover{
+                    background-color: darken(grey, 10%);
+                }
+            }
+            & > * {
+                margin: 5px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .cookie-container{
+        & > .cookie-container-content{
+            & > p{
+                font-size: 1.5em;
+            }
+            & > div {
+                flex-direction: row;
+                justify-content: space-around;
+                & > *{
+                    margin-top: 10px;
+                    width: 45%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .cookie-settings{
+        overflow-x: hidden;
+        &>div{
+            & > .buttons{
+                margin-left: calc(100% - 200px);
+                
+            }
+            &>.detailed-preferences{
+                display: none;
+            }
+        }
+        & > .cookie-buttons{
+            margin-left: calc(100% - 375px);
+        }
+    }
+}
+.cookie-settings{
+    display: none;
+    
+    &>div{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        & > button{
+            width: auto;
+            padding: 10px;
+            margin: 10px 5px;
+        }
+        &>.detailed-preferences{
+            display: none;
+        }
+    }
+}
+
+.cookie-table-row{
+    &>.cookie-table-column{
+        background-color: lightgrey;
+        color: $primary-color;
+    }
+    &-header{
+        &>.cookie-table-column{
+            color: white;
+            background-color: grey;
+        }
+    }
+}
+.cookie-table-column {
+    float: left;
+    padding: 10px;
+    border: 1px solid white;
+    height: 50px;
+    &-left, &-right{
+        width: 25%;
+    }
+    &-middle{
+        width: 40%;
+    }
+}
+.cookie-table-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.preference-btn{
+    background-color:grey;
+    &:hover{
+        background-color: darken(grey, 10%);
+    }
+}
+.cookie-cancel-btn{
+    background-color:grey;
+    &:hover{
+        background-color: darken(grey, 10%);
+    }
+}
+.cookie-accept-btn{
+    background-color: $wisteria;
+    &:hover{
+        background-color: darken($wisteria, 10%);
+    }
+
+}
+.cookie-enable-btn{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    color: darkgray;
+}
+.cookie-disable-btn{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    color: darkgray;
+}
+.isactive{
+    background-color: $wisteria;
+    color: white;
+    &:hover{
+        background-color: darken($wisteria, 10%);
+    }
+}

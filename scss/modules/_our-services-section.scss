@@ -1,62 +1,76 @@
 .container-our-services{
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
 }
 .our-services-header{
     display: flex;
     align-items: center;
     &>h2{
         text-align: left;
-        flex: 0 0 45%;
+        
     }
     &>a{
         text-align: right;
-        flex: 0 0 46%;
+        
         
     }
 }
-.our-services-top{
+.our-services-content{
     display: flex;
-    text-align: center;
-    justify-content: center;
-}
-.our-services-bottom{
-    display: flex;
-    text-align: center;
-    margin-top: 20px;
-    justify-content: center;
-
+    flex-wrap: wrap;
+    margin: 10px auto;
 }
 .item-services {
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 5px #bebebe;
-    height:300px;
-    border-radius: 8%;
+    height:325px;
+    border-radius: 8px;
     text-align: center;
-    &>button{
-        margin-top: auto;
-        margin-bottom: 20px;
-        width:150px;
-        margin-left: auto;
-        margin-right: auto;
+    &>.text{
+        width: 95%;
+        margin: auto;
     }
 }
+p[class*="button"]{
+    padding: 10px;
+    width: 150px;
+    margin: 10px auto;
+    border-radius: 6px;
+}
 .BS {
-    button[class*="BS-button"]{
+    margin: 20px auto;
+    & > div{
+        @include setcolors(black,$secondary-color);
+    }
+    &:hover > div{
+        @include setcolors($secondary-color,$hoki);
+    }
+    p[class*="BS-button"]{
         //first color is set to color, 2nd is background-color
         @include setcolors($secondary-color,$hoki);
-        padding: 10px;
+        
     }
     @include Move-up($secondary-color,$hoki);
     &:hover i[class*="BS"] {
         @include setcolors($hoki,$secondary-color);
     }
-    &:hover button[class*="BS-button"]{
+    &:hover p[class*="BS-button"]{
         @include setcolors($hoki,$secondary-color);
     }
 }
 .IT{
-    button[class*="IT-button"]{
+
+     margin: 20px auto;
+    & > div{
+        @include setcolors(black,$secondary-color);
+    }
+    &:hover > div{
+        @include setcolors($secondary-color,$dodger-blue);
+    }
+    p[class*="IT-button"]{
         padding: 10px;
         @include setcolors($secondary-color,$dodger-blue);
     }
@@ -64,12 +78,19 @@
     &:hover i[class*="IT"]{
         @include setcolors($dodger-blue,$secondary-color);
     }
-    &:hover button[class*="IT-button"]{
+    &:hover p[class*="IT-button"]{
         @include setcolors($dodger-blue,$secondary-color);
     }
 }
 .DM{
-    button[class*="DM-button"]{
+     margin: 20px auto;
+    & > div{
+        @include setcolors(black,$secondary-color);
+    }
+    &:hover > div{
+        @include setcolors($secondary-color,$jade);
+    }
+    p[class*="DM-button"]{
         @include setcolors($secondary-color,$jade);
         padding: 10px;
     }
@@ -77,12 +98,19 @@
     &:hover i[class*="DM"] {
         @include setcolors($jade,$secondary-color);
     }
-    &:hover button[class*="DM-button"]{
+    &:hover p[class*="DM-button"]{
         @include setcolors($jade,$secondary-color);
     }
 }
 .TS{
-    button[class*="TS-button"]{
+     margin: 20px auto;
+    & > div{
+        @include setcolors(black,$secondary-color);
+    }
+    &:hover > div{
+        @include setcolors($secondary-color,$valencia);
+    }
+    p[class*="TS-button"]{
         @include setcolors($secondary-color,$valencia);
         padding: 10px;
     }
@@ -90,78 +118,111 @@
     &:hover i[class*="TS"]{
         @include setcolors($valencia,$secondary-color);
     }
-    &:hover button[class*="TS-button"]{
+    &:hover p[class*="TS-button"]{
         @include setcolors($valencia,$secondary-color);
     }
 }
 .WD{
-    button[class*="WD-button"]{
+     margin: 20px auto;
+    & > div{
+        @include setcolors(black,$secondary-color);
+    }
+    &:hover > div{
         @include setcolors($secondary-color,$wisteria);
-        padding: 10px;
+    }
+    p[class*="WD-button"]{
+        @include setcolors($secondary-color,$wisteria);
+        
     }
     @include Move-up($secondary-color,$wisteria);
     &:hover i[class*="WD"]{
         @include setcolors($wisteria,$secondary-color);
     } 
-    &:hover button[class*="WD-button"]{
+    &:hover p[class*="WD-button"]{
         @include setcolors($wisteria,$secondary-color);
     }
 }
 .CS{
-    button[class*="CS-button"]{
+     margin: 20px auto;
+    & > div{
+        @include setcolors(black,$secondary-color);
+    }
+    &:hover > div{
         @include setcolors($secondary-color,$radical-red);
-        padding: 10px;
+    }
+    p[class*="CS-button"]{
+        @include setcolors($secondary-color,$radical-red);
+        
     }
     @include Move-up($secondary-color,$radical-red);
     &:hover i[class*="CS"]{
         @include setcolors($radical-red,$secondary-color);
     }
-    &:hover button[class*="CS-button"]{
+    &:hover p[class*="CS-button"]{
         @include setcolors($radical-red,$secondary-color);
     }
 }
 .DC{
-    button[class*="DC-button"]{
+     margin: 20px auto;
+    & > div{
+        @include setcolors(black,$secondary-color);
+    }
+    &:hover > div{
         @include setcolors($secondary-color,$valencia);
-        padding: 10px;
+    }
+    p[class*="DC-button"]{
+        @include setcolors($secondary-color,$valencia);
+        
     }
     @include Move-up($secondary-color,$valencia);
     &:hover i[class*="DC"]{
         @include setcolors($valencia,$secondary-color);
     }
-    &:hover button[class*="DC-button"]{
+    &:hover p[class*="DC-button"]{
         @include setcolors($valencia,$secondary-color);
     }
 }
 //affects screens that are  smaller than 766px
 @media screen and (max-width:766px){
     .container-our-services{
+        display: flex;
+        flex-direction: column;
         &>.our-services-header{
+            margin: 0 auto;
+            width: 90%;
+            & > h2{
+                margin: 0;
+            }
             &>a{
                 display: none;
             }
         }
+        &>.our-services-content{
+            & > *{
+                width: 90%;
+            }
+        }
         &>.our-services-footer{
-            display: flex;
-            justify-content: center;
-            flex: 0 0 100%;
-            margin-top: 10px;
-        }
-        &>*>.our-services-top{
-            display: flex;
-            flex-direction: column;
-        }
-        &>*>.our-services-bottom{
-            display: flex;
-            flex-direction: column;
-
+            margin-left: 35%;
         }
     }
 }
 //affects screens that are larger than 767px
 @media screen and (min-width:767px){
+    body{
+        overflow-x: hidden;
+    }
     .container-our-services{
-        
+        &>.our-services-header{
+            margin: 0 auto;
+            width: 90%;
+            & > h2{
+                margin: 0;
+            }
+            &>a{
+                margin-left: auto;
+            }
+        }
         &>.our-services-footer{
             &>a{
                 display: none;
@@ -171,43 +232,30 @@
 }
 //affects screens that are larger than 767px but smaller than 991px
 @media screen and (min-width:767px) and (max-width:991px){
-    .container-our-services{
-        &>*>.our-services-top{
-            display: flex;
-            flex-direction: column;
+    .our-services-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &>*:nth-child(-n+3){
+            width: 95%;
         }
-        &>*>.our-services-bottom{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            &>*{
-                display: flex;
-                flex-direction: column;
-                flex: 0 0 45%;
-            }
+        &>*:nth-child(n+4){
+            width: 45%;
         }
     }
 }
 //affects screens that are larger than 992px but smaller than 1259px
 @media screen and (min-width:992px) and (max-width:1259px) {
     .container-our-services{
-        &>*>.our-services-top{
-            display: flex;
-            flex-direction: row;
-            &>*{
-                display: flex;
-                flex-direction: column;
-                flex: 0 0 30%;
-            }
-        }
-        &>*>.our-services-bottom{
+        .our-services-content{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            &>*{
-                display: flex;
-                flex-direction: column;
-                flex: 0 0 45%;
+            &>*:nth-child(-n+3){
+                width: 28%;
+            }
+            &>*:nth-child(n+4){
+                width: 45%;
             }
         }
     }
@@ -215,23 +263,15 @@
 //affects screens that are larger than 1260px
 @media screen and (min-width:1260px){
     .container-our-services{
-        &>*>.our-services-top{
-            display: flex;
-            flex-direction: row;
-            &>*{
-                display: flex;
-                flex-direction: column;
-                flex: 0 0 32%;
-            }
-        }
-        &>*>.our-services-bottom{
+        .our-services-content{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            &>*{
-                display: flex;
-                flex-direction: column;
-                flex: 0 0 23%;
+            &>*:nth-child(-n+3){
+                width: calc(33% - 30px);
+            }
+            &>*:nth-child(n+4){
+                width: calc(25% - 40px);
             }
         }
     }
