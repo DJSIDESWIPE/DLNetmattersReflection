@@ -5,7 +5,7 @@ $overlay = $(".overlay");
 $(".btn-sidebar").on("click", function(){
     if($sidebar.is(":hidden")){
         $sidebar.show();
-        $body.css("scrollbar-width", "none");
+        $body.css("overflow-y", "hidden");
         $bodycontainer.addClass("disabled");
         $overlay.show();
         disableScroll();
@@ -15,7 +15,7 @@ $overlay.on("click", function(){
     if(!$sidebar.is(":hidden")){
         $sidebar.hide();
         enableScroll()
-        $body.css("scrollbar-width", "5px");
+        $body.css("overflow-y", "scroll");
         $bodycontainer.removeClass("disabled");
         $overlay.hide();
     }
