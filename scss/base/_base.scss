@@ -59,6 +59,12 @@
         display: none;
     }
 }
+@media screen and (min-width: 1200px) {
+    .container-body{
+        width: 1260px;
+        margin: auto;
+    }
+}
 
 .container-sidebar{
     display: none;
