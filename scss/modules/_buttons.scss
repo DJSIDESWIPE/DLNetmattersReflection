@@ -16,7 +16,7 @@ button {
     width: 60px;
     color: $secondary-color;
     background-color: $primary-color;
-    z-index: 3;
+    z-index: 300;
     &:hover{
         cursor: pointer;
     }
@@ -76,6 +76,7 @@ button {
         padding: 20px;
         align-self: flex-start;
         margin-bottom: 20px;
+        font-size: 1.15rem;
         &:hover{
             background-color: darken(#272936, 10%);
         }
@@ -86,6 +87,7 @@ button {
         padding: 20px;
         margin-top: auto;
         margin-bottom: 20px;
+        font-size: 1.15rem;
         &:hover{
             background-color: darken($dodger-blue, 10%);
         }
@@ -96,6 +98,7 @@ button {
         padding: 20px;
         margin-top: auto;
         margin-bottom: 20px;
+        font-size: 1.15rem;
         &:hover{
             background-color: darken($jade, 10%);
         }

@@ -9,7 +9,7 @@
     align-items: center;
     &>h2{
         text-align: left;
-        
+        font-size: 3rem;
     }
     &>a{
         text-align: right;
@@ -25,13 +25,18 @@
 .item-services {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 5px #bebebe;
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
     height:325px;
     border-radius: 8px;
     text-align: center;
+    
     &>.text{
         width: 95%;
         margin: auto;
+        color:grey;
+    }
+    & > h3{
+        font-weight: 100;
     }
 }
 p[class*="button"]{
@@ -60,6 +65,9 @@ p[class*="button"]{
     &:hover p[class*="BS-button"]{
         @include setcolors($hoki,$secondary-color);
     }
+    &:hover .text{
+        color:white;
+    }
 }
 .IT{
 
@@ -80,6 +88,9 @@ p[class*="button"]{
     }
     &:hover p[class*="IT-button"]{
         @include setcolors($dodger-blue,$secondary-color);
+    }
+    &:hover .text{
+        color:white;
     }
 }
 .DM{
@@ -161,6 +172,9 @@ p[class*="button"]{
     &:hover p[class*="CS-button"]{
         @include setcolors($radical-red,$secondary-color);
     }
+    &:hover .text{
+        color:white;
+    }
 }
 .DC{
      margin: 20px auto;
@@ -180,6 +194,9 @@ p[class*="button"]{
     }
     &:hover p[class*="DC-button"]{
         @include setcolors($valencia,$secondary-color);
+    }
+    &:hover .text{
+        color:white;
     }
 }
 //affects screens that are  smaller than 766px

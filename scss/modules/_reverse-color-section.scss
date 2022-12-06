@@ -1,14 +1,15 @@
 .reverse-color{
     background-color: $primary-color;
     color: $secondary-color;
+    font-weight: 100;
     &>div>h2{
         font-size: 2.5em;
     }
     &>div>p{
-        font-size: 1.25em;
+        font-size: 1rem;
     }
     &>div>.customerthoughts{
-        font-size: 1.5em;
+        font-size: 1.25em;
         &> i{
             font-size: 0.75em;
             color: grey;   

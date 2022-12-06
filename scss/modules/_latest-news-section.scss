@@ -1,20 +1,95 @@
-.container-news{
-    margin-bottom: 50px;
-    flex: 0 0 95%;
-    & p{
-        margin-left: 15px;
+.news-container{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    font-weight: 100;
+}
+.posted{
+    border-top: solid 1px lightgray;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0px 20px;
+    & img{
+        justify-content: center;
+        align-self: center;
+        padding: 10px;
+        height: 50px;
+        width: 50px;
     }
-    & > div > a > div {
-        box-shadow: 0 0 5px #bebebe;
-        max-height:110vh;
-        border-radius: 0 0 2% 2%;
+    & p {
+        width: calc(70% - 70px);
+    }
+}
+.news-content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.news-content{
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    flex-direction: column ;
+}
+.move-up{
+    @include move-up();
+}
+.news-header{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    &>h2{
         text-align: left;
-        flex:0 0 100%;
+        margin-right: auto;
+        font-size: 3rem;
+    }
+    &>a{
+        text-align: right;
+        margin-left: auto;
+    }
+}
+.news-image{
+
+    & > img{
+        width: 100%;
+        height: 250px;
+        margin-top: -35px;
+        z-index: 0;
+
+    }
+    & > .news-image-tag{
+        font-size: 0.75rem;
+        text-align: center;
+        margin: 0;
+        padding: 5px;
+        position: relative;
+        width: auto;
+        z-index: 50;
+        margin-top: 5px;
+        margin-left: calc(100% - 100px);
+        &-1{
+            background-color: $first-news;
+            color: white;
+        }
+        &-2{
+            background-color: $second-news;
+            color: white;
+        }
+        &-3{
+            background-color: $third-news;
+            color: white;
+        }
     }
 }
 .news-item{
     &-1{
         margin-bottom: auto;
+        padding: 0 20px;
         &-btn{
             background-color: $first-news;
             color:$secondary-color;
@@ -30,6 +105,7 @@
     }
     &-2{
         margin-bottom: auto;
+        padding: 0 20px;
         &-btn{
             background-color: $second-news;
             color:$secondary-color;
@@ -45,6 +121,7 @@
     }
     &-3{
         margin-bottom: auto;
+        padding: 0 20px;
         &-btn{
             background-color: $third-news;
             color:$secondary-color;
@@ -59,130 +136,42 @@
         color: $third-news
     }
 }
-
-.posted{
-    padding-top: 20px;
-    border-top: solid 1px grey;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    & img{
-        justify-content: center;
-        align-self: center;
-        
-        height: 50px;
-        width: 50px;
-    }
-    & p {
-        flex: 0 0 70%;
+.news-info{
+    padding: 0 20px;
+}
+.news-footer{
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    padding: 10px;
+    & > *{
+        margin: 0 auto;
+        text-align: center;
     }
 }
-
-.move-up{
-    @include move-up();
-}
-//affect screens smaller than 766px
 @media screen and (max-width:766px){
-    .container-news{
-        display: flex;
-        flex-direction: column;
-        &>.news-footer{
-            justify-content: center;
-            text-align: center;
-        }
-        & > div > a > div {
-            & > .images{
-                width:100%;
-                height:300px;
-            }
-        }
-        &>.news-header>a{
-            display: none;
-        }
+    .news-header>a{
+        display: none;
     }
 }
-//affect screen larger than 767px but smaller than 1259px
-@media screen and (min-width:767px) and (max-width:1259px){
-    .container-news{
-        display: flex;
-        flex-direction: column;
-        flex: 0 0 95%;
-        &>.news-header{
-            display: flex;
-            align-items: center;
-            &>h2{
-                text-align: left;
-                margin-right: auto;
-            }
-            &>a{
-                text-align: right;
-                margin-left: auto;
-            }
-        }
-        & > .container-news-stories {
-            display: flex;
-            flex-direction: row;
-            flex: 0 0 95%;
-            & > *{
-                & > *>.images{
-                    width: 100%;
-                    height: 300px
-                }
-                &>.container-news-1{
-                    flex: 0 0 45%;
-                    height:100vh;
-                }
-                &>.container-news-2{
-                    flex: 0 0 45%;
-                    height:100vh;
-                }
-                &>.container-news-3{
-                    display: none;
-                }
-            }
-        } 
-        &>.news-footer{
-            display: none;
-        }
-    }  
+@media screen and (min-width: 767px) and (max-width:1259px) {
+    .news-content-container{
+        flex-direction: row;
+        width: 100%;
+    }
+    .news-content-3{
+        display: none;
+    }
+    .news-footer{
+        display: none;
+    }
 }
-//afect screens larger than 1260px
-@media screen and (min-width:1260px){
-    .container-news{
-        &>.news-header{
-            display: flex;
-            align-items: center;
-            &>h2{
-                text-align: left;
-                margin-right: auto;
-            }
-            &>a{
-                text-align: right;
-                margin-left: auto;
-            }
-        }
-        & > .container-news-stories {
-            display: flex;
-            flex-direction: row;
-            flex: 0 0 95%;
-            & > *{
-                display: flex;
-                flex: 0 0 32%;
-                & > div{
-                    display: flex;
-                    flex-direction: column;
-                    justify-items: space-between;
-                    align-items: space-between;
-                }
-                & > div > .images{
-                    width: 100%;
-                }
-            }
-        } 
-        &>.news-footer{
-            display: none;
-        }
+@media screen and (min-width: 1200px) {
+    .news-footer{
+        display: none;
+    }
+    .news-content-container{
+        flex-direction: row;
+        width: 100%;
     }
 }

@@ -3,6 +3,10 @@
     & > form{
         padding-bottom: 20px;
         padding-top: 5px;
+        &>div>h2{
+            font-size: 1.5rem;
+            font-weight: 100;
+        }
     }
 }
 .required{
@@ -12,6 +16,7 @@
     & > #Email,#Name{
         border: 1px solid #dadada;
         border-radius: 2px;
+        font-size: 1.25rem;
         &:focus{
             outline: none;
             border-color: #9ecaed;
