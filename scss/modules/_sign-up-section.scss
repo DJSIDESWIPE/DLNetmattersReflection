@@ -3,9 +3,13 @@
     & > form{
         padding-bottom: 20px;
         padding-top: 5px;
-        &>div>h2{
-            font-size: 1.5rem;
+        &>div{
+            width: 95%;
+            margin: 0 auto;
+            &>h2{
+            font-size: 1.75rem;
             font-weight: 100;
+            }
         }
     }
 }
@@ -16,7 +20,9 @@
     & > #Email,#Name{
         border: 1px solid #dadada;
         border-radius: 2px;
-        font-size: 1.25rem;
+        font-size: 0.8rem;
+        padding: 5px 10px;
+        color: grey;
         &:focus{
             outline: none;
             border-color: #9ecaed;

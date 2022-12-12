@@ -2,10 +2,10 @@
     background-color: $primary-color;
     color: $secondary-color;
     font-weight: 100;
-    &>div>h2{
+    & > .container>div>h2{
         font-size: 2.5em;
     }
-    &>div>p{
+    & > .container>div>p{
         font-size: 1rem;
     }
     &>div>.customerthoughts{
@@ -50,22 +50,24 @@
 //affects screens that are larger than 922px
 @media screen and (min-width:922px){
     .container-inverse{
-        display: flex;
-        flex-direction: row;
-        &>.container-inverse-welcome{
+        & > .container{
             display: flex;
-            flex-direction: column;
-        }
-        &>.container-inverse-reviews{
-            display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            &>.container-inverse-welcome{
+                display: flex;
+                flex-direction: column;
+            }
+            &>.container-inverse-reviews{
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 }
 //affects screens that are smaller than 991px
 @media screen and (max-width:991px){
     .container-inverse {
-        & &-welcome h2{
+        & > .container &-welcome h2{
             padding-top: 20px;
         }
     }

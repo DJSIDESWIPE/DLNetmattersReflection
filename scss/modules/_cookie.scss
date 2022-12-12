@@ -15,18 +15,19 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 10%;
+        margin-bottom: auto;
         border-radius: 4px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 10px;
+        padding: 10px 0;
         
         & > h2{
             text-align: left;
             margin: 0;
             padding: 10px;
-            font-weight: 100;
-            font-size: 1.5em;
+            font-weight: 400;
+            font-size: 1.5rem;
         }
         & > p{
             margin-top: auto;
@@ -35,11 +36,14 @@
             margin-bottom: auto;
             color: grey;
             font-weight:lighter;
-            font-size: 1em;
+            font-size: 0.95em;
+            line-height: 1.45rem;
+            font-weight: 100;
             padding: 10px 5px;
             padding-bottom: 50px;
             & > a {
-                color: #000000;
+                //color: #000000;
+                font-weight: 300;
                 &:hover{
                     text-decoration: underline;
                 }
@@ -77,12 +81,13 @@
 @media screen and (min-width: 767px) {
     .cookie-container{
         & > .cookie-container-content{
-            margin-top: 15vh;
+            margin-bottom: auto;
+            margin-top: 10%;
             & > h2 {
                 font-size: 2em;
             }
             & > p{
-                font-size: 1.15em;
+                font-size: 1em;
                 
             }
             & > div {
