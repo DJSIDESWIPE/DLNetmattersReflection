@@ -90,39 +90,6 @@
             }
         }
     }
-    .container-sidebar{
-        display: none;
-    }
-    .sidebar-icons{
-        display: none;
-    }
-    .sidebar-navbar{
-        display: none;
-    }
-    .sidebar-contact-us{
-        display: none;
-    }
-    & > .sidebar-headers-navbar {
-        background-color: rgba(#000, 0.25);
-        border-top: 1px solid black;
-        margin: 0;
-        padding: 10px;
-        
-        &:hover{
-            background-color: lighten($primary-color, 10%);
-        }
-        & > a {       
-            
-            margin-left: 1px;   
-            color: white;
-            width: 90%;  
-            &::before{
-                        
-                font-size: 16px;
-                content: ">> ";
-            }
-        }    
-    } 
 }
 
 @media screen and (min-width:767px) and (max-width:992px) {
