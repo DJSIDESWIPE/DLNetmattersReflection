@@ -76,26 +76,39 @@
         z-index: 50;
         margin-top: 5px;
         margin-left: calc(100% - 100px);
-        &-1{
-            background-color: $first-news;
+        &-BespokeSoftware{
+            background-color: $hoki;
             color: white;
         }
-        &-2{
-            background-color: $second-news;
+        &-ITSupport{
+            background-color: $dodger-blue;
             color: white;
         }
-        &-3{
-            background-color: $third-news;
+        &-WebDesign{
+            background-color: $wisteria;
             color: white;
         }
+        &-TelecomsServices{
+            background-color: $valencia;
+            color: white;
+        }
+        &-DigitalMarketting{
+            background-color: $jade;
+            color: white;
+        }
+        &-CyberSecurity{
+            background-color: jade;
+            color: white;
+        }
+        
     }
 }
 .news-item{
-    &-1{
+    &-BespokeSoftware{
         margin-bottom: auto;
         padding: 0 20px;
         &-btn{
-            background-color: $first-news;
+            background-color: $hoki;
             color:$secondary-color;
             border-bottom: 5px 5px;
             width: 100px;
@@ -105,13 +118,13 @@
             align-self: start;
             margin-left: 1em;
         }
-        color:$first-news;
+        color:$hoki;
     }
-    &-2{
+    &-ITSupport{
         margin-bottom: auto;
         padding: 0 20px;
         &-btn{
-            background-color: $second-news;
+            background-color: $dodger-blue;
             color:$secondary-color;
             border-bottom: 5px 5px;
             width: 100px;
@@ -121,13 +134,13 @@
             align-self: start;
             margin-left: 1em;
         }
-        color:$second-news;
+        color:$dodger-blue;
     }
-    &-3{
+    &-WebDesign{
         margin-bottom: auto;
         padding: 0 20px;
         &-btn{
-            background-color: $third-news;
+            background-color: $wisteria;
             color:$secondary-color;
             border-bottom: 5px 5px;
             width: 100px;
@@ -137,7 +150,55 @@
             align-self: start;
             margin-left: 1em;
         }
-        color: $third-news
+        color: $wisteria;
+    }
+    &-TelecomsServices{
+        margin-bottom: auto;
+        padding: 0 20px;
+        &-btn{
+            background-color: $valencia;
+            color:$secondary-color;
+            border-bottom: 5px 5px;
+            width: 100px;
+            border-radius: 4px;
+            padding: 10px;
+            border-style: none;
+            align-self: start;
+            margin-left: 1em;
+        }
+        color:$valencia;
+    }
+    &-DigitalMarketting{
+        margin-bottom: auto;
+        padding: 0 20px;
+        &-btn{
+            background-color: $jade;
+            color:$secondary-color;
+            border-bottom: 5px 5px;
+            width: 100px;
+            border-radius: 4px;
+            padding: 10px;
+            border-style: none;
+            align-self: start;
+            margin-left: 1em;
+        }
+        color:$jade;
+    }
+    &-CyberSecurity{
+        margin-bottom: auto;
+        padding: 0 20px;
+        &-btn{
+            background-color: $radical-red;
+            color:$secondary-color;
+            border-bottom: 5px 5px;
+            width: 100px;
+            border-radius: 4px;
+            padding: 10px;
+            border-style: none;
+            align-self: start;
+            margin-left: 1em;
+        }
+        color: $radical-red;
     }
 }
 .news-info{
@@ -177,6 +238,9 @@
     .news-footer{
         display: none;
     }
+    .news-content {
+        height: 575px;
+    }
 }
 @media screen and (min-width: 1200px) {
     .news-footer{
@@ -185,5 +249,8 @@
     .news-content-container{
         flex-direction: row;
         width: 100%;
+    }
+    .news-content {
+        height: 575px;
     }
 }

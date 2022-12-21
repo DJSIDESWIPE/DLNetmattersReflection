@@ -18,12 +18,12 @@
                 margin-bottom: 20px;
                 line-height: 65px;
             }
-            & > p{
+            & > .banner-p{
             
                 font-size: 1.5rem;
                 font-weight: 600;
             }
-            & > button{
+            & > .btn-banner{
                 margin-bottom: auto;
             }
         }
@@ -42,15 +42,20 @@
     margin: 0;
     display: inline-block;
     color: white;
-    & > .container > h2,p{
+    & > .container > h2,.banner-p{
         margin-left: auto;
         margin-right: auto;
     }
-    & > .container > button{
+    & > .container > .btn-banner{
         font-size: 1.25em;
         padding: 15px;
         width:250px;
         border-radius: 3px;
+        color: white;
+        text-transform: uppercase;
+        &:hover{
+            text-decoration: none;
+        }
     }
     &-1{
         background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-oaVs.png");
@@ -129,7 +134,8 @@
             }
         }
     }
-}.slick-dots li button:before
+}
+.slick-dots li button:before
 {
     
     font-size: 8px;

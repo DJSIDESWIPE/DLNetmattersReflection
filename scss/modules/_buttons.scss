@@ -46,7 +46,14 @@ button {
         padding: 1em;
         border-radius: 4px;
         font-size: 1em;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        &:visited{
+            color: white;
+        }
         &:hover{
+            text-decoration: none;
             background-color: darken(#939393, 10%);
         }
     }

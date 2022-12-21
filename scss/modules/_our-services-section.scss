@@ -4,6 +4,7 @@
     flex-direction: column;
 
 }
+
 .our-services-header{
     display: flex;
     align-items: center;
@@ -22,6 +23,7 @@
     flex-wrap: wrap;
     margin: 10px auto;
 }
+
 .item-services {
     display: flex;
     flex-direction: column;
@@ -31,15 +33,12 @@
     border-radius: 8px;
     text-align: center;
     
-    &>.text{
-        width: 95%;
-        margin: auto;
-        color:grey;
-    }
+    
     & > h3{
         font-weight: 100;
     }
 }
+
 p[class*="button"]{
     padding: 10px;
     width: 150px;
@@ -50,9 +49,17 @@ p[class*="button"]{
     margin: 20px auto;
     & > div{
         @include setcolors(black,$secondary-color);
+        & > .text{
+            width: 95%;
+            margin: auto;
+            color:grey;
+        }
     }
     &:hover > div{
         @include setcolors($secondary-color,$hoki);
+        & > .text{
+            color:white;
+        }
     }
     p[class*="BS-button"]{
         //first color is set to color, 2nd is background-color
@@ -66,18 +73,24 @@ p[class*="button"]{
     &:hover p[class*="BS-button"]{
         @include setcolors($hoki,$secondary-color);
     }
-    &:hover .text{
-        color:white;
-    }
+    
 }
 .IT{
 
      margin: 20px auto;
     & > div{
         @include setcolors(black,$secondary-color);
+        & > .text{
+            width: 95%;
+            margin: auto;
+            color:grey;
+        }
     }
     &:hover > div{
         @include setcolors($secondary-color,$dodger-blue);
+        & > .text{
+            color:white;
+        }
     }
     p[class*="IT-button"]{
         padding: 10px;
@@ -90,17 +103,22 @@ p[class*="button"]{
     &:hover p[class*="IT-button"]{
         @include setcolors($dodger-blue,$secondary-color);
     }
-    &:hover .text{
-        color:white;
-    }
 }
 .DM{
      margin: 20px auto;
     & > div{
+        & > .text{
+            width: 95%;
+            margin: auto;
+            color:grey;
+        }
         @include setcolors(black,$secondary-color);
     }
     &:hover > div{
         @include setcolors($secondary-color,$jade);
+        & > .text{
+            color:white;
+        }
     }
     p[class*="DM-button"]{
         @include setcolors($secondary-color,$jade);
@@ -117,10 +135,18 @@ p[class*="button"]{
 .TS{
      margin: 20px auto;
     & > div{
+        & > .text{
+            width: 95%;
+            margin: auto;
+            color:grey;
+        }
         @include setcolors(black,$secondary-color);
     }
     &:hover > div{
         @include setcolors($secondary-color,$valencia);
+        & > .text{
+            color:white;
+        }
     }
     p[class*="TS-button"]{
         @include setcolors($secondary-color,$valencia);
@@ -133,14 +159,23 @@ p[class*="button"]{
     &:hover p[class*="TS-button"]{
         @include setcolors($valencia,$secondary-color);
     }
+    
 }
 .WD{
      margin: 20px auto;
     & > div{
+        & > .text{
+            width: 95%;
+            margin: auto;
+            color:grey;
+        }
         @include setcolors(black,$secondary-color);
     }
     &:hover > div{
         @include setcolors($secondary-color,$wisteria);
+        & > .text{
+            color:white;
+        }
     }
     p[class*="WD-button"]{
         @include setcolors($secondary-color,$wisteria);
@@ -153,14 +188,23 @@ p[class*="button"]{
     &:hover p[class*="WD-button"]{
         @include setcolors($wisteria,$secondary-color);
     }
+    
 }
 .CS{
      margin: 20px auto;
     & > div{
+        & > .text{
+            width: 95%;
+            margin: auto;
+            color:grey;
+        }
         @include setcolors(black,$secondary-color);
     }
     &:hover > div{
         @include setcolors($secondary-color,$radical-red);
+        & > .text{
+            color:white;
+        }
     }
     p[class*="CS-button"]{
         @include setcolors($secondary-color,$radical-red);
@@ -173,17 +217,23 @@ p[class*="button"]{
     &:hover p[class*="CS-button"]{
         @include setcolors($radical-red,$secondary-color);
     }
-    &:hover .text{
-        color:white;
-    }
+    
 }
 .DC{
      margin: 20px auto;
     & > div{
+        & > .text{
+            width: 95%;
+            margin: auto;
+            color:grey;
+        }
         @include setcolors(black,$secondary-color);
     }
     &:hover > div{
         @include setcolors($secondary-color,$valencia);
+        & > .text{
+            color:white;
+        }
     }
     p[class*="DC-button"]{
         @include setcolors($secondary-color,$valencia);
@@ -195,9 +245,6 @@ p[class*="button"]{
     }
     &:hover p[class*="DC-button"]{
         @include setcolors($valencia,$secondary-color);
-    }
-    &:hover .text{
-        color:white;
     }
 }
 //affects screens that are  smaller than 766px

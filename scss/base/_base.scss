@@ -39,32 +39,33 @@
                 }
                 & > p{
                     font-size: 0.75em;
+                    z-index: 20;
                 }
                 & > .arrow{
                     &-1{
                         background-color: $primary-color;
                         z-index: -1;
-                        height: 50px;
-                        width: 50px;
-                        margin-top: 55px;
+                        height: 35px;
+                        width: 35px;
+                        margin-top: 70px;
                         margin-left: 75px;
                         transform: rotate(45deg);
                     }
                     &-2{
                         background-color: $primary-color;
                         z-index: -1;
-                        height: 50px;
-                        width: 50px;
-                        margin-top: 20px;
+                        height: 35px;
+                        width: 35px;
+                        margin-top: 32px;
                         margin-left: 75px;
                         transform: rotate(45deg);
                     }
                     &-3{
                         background-color: $primary-color;
+                        height: 35px;
+                        width: 35px;
                         z-index: -1;
-                        height: 50px;
-                        width: 50px;
-                        margin-top: -10px;
+                        margin-top: 0px;
                         margin-left: 75px;
                         transform: rotate(45deg);
                     }
